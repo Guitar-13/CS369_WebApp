@@ -1,0 +1,373 @@
+*{
+    margin: 0; /* เอาขอบออกปกติจะแถมให้ 10 pixel */
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.header{ /* . = start class*/
+    display:flex; /* เพื่อให้แสดงเรียงเป็นแนวนอน */
+    align-items: center;
+    padding: 10px;
+    min-height: 60px;
+    box-shadow: 0 10px 20px 5px rgba(10, 20, 30, 0.05) ;
+    width: 100%;
+}
+
+.logo{
+    height: auto; 
+    width: fit-content;
+    margin-right: 1.5em;
+}
+
+
+.logo img{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+li{
+    margin-right:3em;
+}
+
+.mySidenav{
+    display: none;
+}
+
+.left_menu_bar{
+    align-items: center;
+    margin-right:auto; /* เว้นที่ทางขวา */ 
+    text-decoration-color: black;
+}
+
+.hidden_menu {
+	display: none;
+}
+
+.right_menu_bar{
+    align-items: center;
+    height: auto; 
+    margin-left:auto; /* เว้นที่ทางซ้าย */
+}
+
+.search{
+    margin-right: 3em;
+}
+
+.search input{
+
+    display: inline-block;
+    width: 375px;
+    height: 50px;
+    color: #212326;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    box-shadow: 0 0 0 1px #6b7177;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: padding 150ms;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-right: 1em;
+}
+
+.Search-Logo{
+    height: auto; 
+    width: fit-content;
+    margin-right: 3em;
+    display: none;
+}
+
+.User-Logo{
+    margin-right: 3em;
+    height: 32px;
+}
+
+.Cart-Logo{
+    margin-right: 3em;
+    height: 32px;
+}
+
+.content{
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.ad_home_1{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ad_picture{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.ad_home_2{
+    margin: 0 auto;
+    margin-bottom: 4em;
+    width: 100%;
+}
+
+.ad_home_3{
+    margin: 0 auto;
+    margin-bottom: 4em;
+    width: 100%;
+}
+
+.ad_home_4{
+    margin: 0 auto;
+    margin-bottom: 4em;
+    width: 100%;
+}
+
+/* --------------------  Dropdown Menu Mobile Size-------------------- */
+
+.navbar{
+    display: none;
+}
+
+/* -------------------- Women Page -------------------- */
+
+.woman_information{
+    margin-top: 4em;
+    margin-left: 8em;
+}
+
+.woman_information_list{
+    display:flex;
+    text-align: center;
+    padding: 0; 
+    margin: 0px;
+    margin-top: 1em;
+}
+
+.list_location{
+    margin-right: 1em;
+}
+
+.woman_main_content{
+    display:flex;
+    width: fit-content;
+    margin-top: 4em;
+}
+
+.sidebar_menu{
+    margin-left: 5em;
+    border:300px;
+    min-width: 20%;
+}
+
+.woman_shirts{
+    margin-top: 1em;
+}
+.woman_shirts_list{
+     display: block;
+     margin-top: 1em;
+}
+
+.woman_pants{
+    margin-top: 1em;
+}
+
+.woman_pants_list{
+     display: block;
+     margin-top: 1em;
+}
+
+.woman_skirts{
+    margin-top: 1em;
+}
+
+.woman_skirts_list{
+     display: block;
+     margin-top: 1em;
+ 
+}
+
+.woman_dress{
+    margin-top: 1em;
+}
+
+.woman_dress_list{
+     display: block;
+     margin-top: 1em;
+}
+
+/* -------------------- Women Shop Grid -------------------- */
+
+.grid-item{
+    margin-bottom: 1em;
+}
+
+.grid-container{
+    margin-right: 5em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+.place_marker{
+    margin-top: 5em; 
+    display: flex;
+    justify-content: center
+}
+
+/* -------------------- Bottom Layout -------------------- */
+
+.bottom_layout{
+    margin: 0 0 0 0;
+    padding: 0px;
+    margin-top: 7em;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #f4f4f4;
+}
+
+.sub_bottom_layout{
+
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+}
+
+.about_us{
+    width:20%;
+}
+.about_us_list{
+    padding: 0px;
+    margin-top: 1.5em;
+}
+
+.about_us_menu{
+    margin-bottom: 0.5em;
+}
+
+.help{
+    width:20%;
+}
+
+.help_list{
+    padding: 0px;
+    margin-top: 1.5em;
+}
+
+.help_menu{
+    margin-bottom: 0.5em;
+}
+
+.user_account{
+    width: 20%;
+}
+
+.user_account_list{
+    padding: 0px;
+    margin-top: 1.5em;
+}
+
+.user_account_menu{
+    margin-bottom: 0.5em;
+}
+
+.letter_news{
+    width: 30%;
+}
+
+.letter_news_list{
+    padding: 0px;
+    margin-top: 1.5em
+}
+
+.letter_news_menu{
+    margin-bottom: 0.5em;
+}
+
+.follow_us{
+    width: 25%;
+}
+
+.follow_us_list{
+    padding: 0px;
+    display: flex;
+    margin-top: 1.5em;
+}
+
+/* -------------------- Window Shop Detail Content -------------------- */
+
+.woman_information_shopping_detail{
+    margin-left: 13em;
+    margin-top: 5em;
+}
+
+.window_shopping{
+    display:flex;
+    width: 90%;
+    margin-top: 4em;
+}
+
+.woman_window_shopping_picture{
+    margin-left: 13em;
+    margin-right: 3em;
+    width: 600px;
+}
+.woman_window_shopping_photo{
+    display: flex;
+    width: 30%;
+}
+
+.woman_window_shopping_picture_1{
+    width: 475px;
+}
+
+.woman_window_shopping_picture_2{
+    width: 225px;
+    margin-top: 1em;
+    margin-right: 25px;
+}
+
+.woman_window_shopping_detail{
+    width: 1000px;
+}
+
+.window_shopping_detail{
+    display: block;
+ 
+}
+
+.shopping_detail{
+    margin-bottom: 4em;
+    margin-left: 9em;
+}
+
+.shopping_detail_color{
+    display: flex;
+    align-items: center;
+}
+
+.shopping_detail_size{
+    display: flex;
+    align-items: center;
+}
+
+.add_cart_button{
+
+    color: white;
+    background-color: #ff9053;
+    text-align: center;
+    cursor: pointer;/* เปลี่ยนเมื่อเม้าชี้ */
+    border-style: none;/* ลบขอบ */
+    min-height: 50px;
+    min-width: 400px;
+    width: auto;
+    height: auto;
+
+}

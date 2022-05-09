@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap" rel="stylesheet">
+   
+    <!-- เชื่อมกับ CSS-->
+    <link rel="stylesheet" href="./midterm.css"/>
+    <link rel="stylesheet" href="response.css"/>
+    
+    <!-- FontAwesome Icon-->
+    <script src="https://kit.fontawesome.com/2d39b3d5e3.js" crossorigin="anonymous"></script>
+
+    <!-- Tab Icon-->
+    <link rel="icon" type="image/png" href=".\picture\favicon-32x32.png">
+
+    <!----------------------- Style ----------------------->  
+    <style>
+
+            a { text-decoration: none;  /* Link Style */
+            }
+
+            a:visited {
+                color: black;
+                background-color: transparent;
+                text-decoration: none;  
+            }
+            
+            a:hover {
+                color: #ff9053;
+                background-color: transparent;
+            }
+           
+            /* Follow US Icon Style */
+
+            .fa-facebook-square {   
+                color: white;
+            }
+            .fa-twitter-square {    
+                color: white;
+            }
+            .fa-youtube-square {   
+                color: white;
+            }
+            .fa-instagram-square {
+                color: white;
+            }           
+
+            /* Main Menu Sidebar */
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #f4f4f4;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 70px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+                margin-bottom: 0.5em;
+                text-align: center;
+            }
+
+            .sidenav a:hover {
+                color: #ff9053;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+    </style>
+
+    <title> T&M Design </title>
+
+</head>
+
+<body>
+
+    <header>
+
+<!----------------------- Menu Bar ----------------------->   
+
+        <nav class = "header">
+             
+            <!----------------------- Side Menu Bar Main ----------------------->  
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">หน้าหลัก</a>
+                <a href="#">มาใหม่</a>
+                <a href="#">ลดราคา</a>
+                <a href="women.html">ผู้หญิง</a>
+                <a href="#">ผู้ชาย</a>
+                <a href="#">UNISEX</a>
+              </div>
+              
+            <div id="main">
+               
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <i class="fa-solid fa-bars"></i></span>
+              
+            </div>
+              
+        <script>
+
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+
+        </script>
+
+            
+            <div class = "logo">
+                <a href="index.html"><img src="./picture/logo.png"></a>
+            </div>
+
+        <!----------------------- Left Menu Bar ----------------------->  
+
+            <ul class = "left_menu_bar">
+                <li><font size="5">  มาใหม่  </font></li>
+                <li><font size="5">  ลดราคา  </font></li>
+                <li><font size="5">  <a href="women.html">ผู้หญิง</a> </font>  </li>
+                <li><font size="5">  ผู้ชาย  </font></li>
+                <li><font size="5">  UNISEX  </font></li>
+            </ul>
+
+        <!----------------------- Right Menu Bar ----------------------->  
+
+            <ul class = "right_menu_bar">
+                 
+                <form class="search">
+                    <input id="search" type="text" name="q" value="" placeholder="  ค้นหาสินค้าทั้งหมดที่นี่ ..." class="input-text"  maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" >
+                </form>
+             
+               <div class ="Search-Logo"><a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a> </div>
+                
+               <div class = "User-Logo" > <i class="fa-solid fa-user fa-2x"></i> </div>
+                
+               <div class = "Cart-Logo" > <i class="fa-solid fa-cart-shopping fa-2x"></i> </div>
+            
+            </ul>
+
+
+        </nav>
+        
+    </header>
+
+
+    <!----------------------- Banner ----------------------->  
+
+        <div class = "advertisement_home_1" >
+            <img class = "ad_home_1" src="./picture\Home\home1.png"/>
+
+        </div>
+
+    <!----------------------- Text Adversiement ----------------------->   
+
+        <div class = "content">
+
+            <h1 class = "title"> T & M </h1>
+            <h1 class = "sub_title"> แบรนด์เสื้อผ้านำเทรนด์ โดนใจวัยรุ่น </h1>
+            <h1 class = "sub_title"> ยินดีต้อนรับ </h1>
+            
+        </div>
+
+        <div class= "ad_picture">
+
+            <div class = "advertisement_home_2">
+
+                <a href="#"><img class = "ad_home_2" src="./picture\Home\home2.png"/></a><br/>
+    
+            </div>
+
+            <div class = "advertisement_home_3">
+
+                <a href="#"><img class = "ad_home_3" src="./picture\Home\home3.png"/></a><br/>
+    
+            </div>
+
+            <div class = "advertisement_home_4">
+
+                <a href="#"><img class = "ad_home_4" src="./picture\Home\home4.png"/></a><br/>
+    
+            </div>
+
+        </div>
+
+   <!----------------------- Bottom Layout ----------------------->
+
+   <div class = "bottom_layout">
+        <div class ="sub_bottom_layout">
+            <div class = "about_us">
+                <strong><font size="5"> เกี่ยวกับเรา </font></strong></br>
+                    <ul class = "about_us_list">
+                        <font size="5">
+                            <div class="about_us_menu"><li><a href="#"><p>ข้อมูลเพิ่มเติม</p></a></li></div>
+                            <div class="about_us_menu"><li><a href="#"><p>ที่ตั้งสาขา</p></a></li></div>
+                            <div class="about_us_menu"><li><a href="#"><p>ร่วมงานกับเรา</p></a></li></div>
+                        </font>
+                    </ul>
+            </div>
+
+            <div class = "help">
+                <strong><font size="5"> ช่วยเหลือ </font></strong></br>
+                    <ul class = "help_list">
+                        <font size="5">
+                            <div class="help_menu"><li><a href="#"><p>คำถามที่พบบ่อย</p></a></li></div>
+                            <div class="help_menu"><li><a href="#"><p>การคืนสินค้า</p></a></li></div>
+                            <div class="help_menu"><li><a href="#"><p>การเข้าใช้บริการเว็บไซต์</p></a></li></div>
+                        </font>
+                    </ul>
+            </div>
+
+            <div class = "user_account">
+                <strong><font size="5"> บัญชีผู้ใช้ </font></strong></br>
+                    <ul class = "user_account_list">
+                        <font size="5">
+                            <div class="user_account_menu"><li><a href="#"><p>สมาชิก</p></a></li></div>
+                            <div class="user_account_menu"><li><a href="#"><p>ข้อมูลส่วนตัว</p></a></li></div>
+                            <div class="user_account_menu"><li><a href="#"><p>คูปอง</p></a></li></div>
+                        </font>
+                    </ul>
+            </div>
+
+            <div class = "letter_news">
+                <strong><font size="5"> จดหมายข่าว </font></strong></br>
+                    
+                        <ul class = "letter_news_list">
+                            <font size="5">
+                                <div class="letter_news_menu"><li><p>สมัครเพื่อรับข่าวสารเกี่ยวกับสินค้าใหม่ๆ โปรโมชั่น อีเว้นท์ที่ร้าน และอื่นๆ ก่อนใคร</p></li></div>
+                                <div class="letter_news_menu"><li><a href="#"><p>สมัครเพื่อรับข่าวสารทันที</p></a></li></div>
+                            </font>
+                        </ul> 
+            </div>
+
+            <div class = "follow_us">
+                <strong><font size="5"> ติดตามเรา </font></strong></br>
+                    <ul class = "follow_us_list">
+                        <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-square fa-3x"></i></a></li>
+                        <li><a href="https://twitter.com/home" class="fa-brands fa-twitter-square fa-3x"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="fa-brands fa-instagram-square fa-3x"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="fa-brands fa-youtube-square fa-3x"></i></a></li>
+                    </ul>           
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+     
+
+</body>
+</html>
